@@ -1,0 +1,14 @@
+--- #indentation is very important in YAML format
+-hosts: all
+ user: ansible
+ sudo: yes
+ connection: ssh
+ gather_facts: no
+ tasks:
+   -name: install Httpd server on centos 7
+    action: yum name=httpd state=installed
+    notify: Restart HTTPD
+  Handlers:
+    -name: Restart HTTPD
+     action: service name=httpd state=restarted
+     #ansible-playbook playbook.yml to run 

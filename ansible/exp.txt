@@ -1,0 +1,6 @@
+1. In playbooks we mainly have Target,Variable and Task sections
+2. Here we are using Target and tasks no need for variables section
+3. We create ansible account on all the machines whose states need to be configu red so we can easily ssh into those machines.
+4. once getting into the machne we are installing apache-tomcat and after that using handler we are restarting incase if it is not restarted.
+
+5. for large playbooks we can use roles where in each section like target/variable/handler etc are kept in seperate folders and are included using roles section in main.yml file.

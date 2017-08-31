@@ -1,0 +1,9 @@
+1. chef uses its own domain specific language based on ruby and recipies are stored with .rb extension. many
+
+2. knife is important for our workstation to communicate with chef server similar fuction is done by chef-client but for the nodes by pulling cookbooks from server.
+
+3.This is a simple recipe and no of such recipes will form a cookbook by using runlist we can specify which cookbooks to be runned and there are other things like environments(like production,testing etc) attributes roles etc which all can be along with cookbooks. 
+
+4. Similar to ansible we are just creating a appache web server and starting the service using package and service resources respectively. there are other resources like file resource, cron etc for each task there are diffent resources.
+
+5. chef-client filename.rb lets you run the recipies on nodes.
